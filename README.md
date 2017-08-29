@@ -21,6 +21,7 @@ function.
  * Google Cloud [Config options](http://godoc.org/github.com/hashicorp/go-discover/provider/gce)
  * Microsoft Azure [Config options](http://godoc.org/github.com/hashicorp/go-discover/provider/azure)
  * SoftLayer [Config options](http://godoc.org/github.com/hashicorp/go-discover/provider/softlayer)
+ * OpenStack [Config options](http://godoc.org/github.com/hashicorp/go-discover/provider/openstack)
 
 ### Config Example
 
@@ -36,6 +37,9 @@ provider=azure tag_name=consul tag_value=... tenant_id=... client_id=... subscri
 
 # SoftLayer
 provider=softlayer datacenter=dal06 tag_value=consul username=... api_key=...
+
+# OpenStack
+provider=openstack auth_url=https://... tenant_name=... username=... password=... metadata_key=... metadata_value=...
 ```
 
 ## Command Line Tool Usage

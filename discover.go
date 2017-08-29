@@ -12,6 +12,7 @@ import (
 	"github.com/hashicorp/go-discover/provider/aws"
 	"github.com/hashicorp/go-discover/provider/azure"
 	"github.com/hashicorp/go-discover/provider/gce"
+	"github.com/hashicorp/go-discover/provider/openstack"
 	"github.com/hashicorp/go-discover/provider/softlayer"
 )
 
@@ -31,6 +32,7 @@ var Providers = map[string]Provider{
 	"aws":       &aws.Provider{},
 	"azure":     &azure.Provider{},
 	"gce":       &gce.Provider{},
+	"openstack": &openstack.Provider{},
 	"softlayer": &softlayer.Provider{},
 }
 
